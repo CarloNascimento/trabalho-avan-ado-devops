@@ -4,7 +4,7 @@ Trabalho 2: Deploy automático em VM — DevOps Avançado.
 
 ## Integrantes
 - Carlos Gabriel Alves Nascimento
-- **PREENCHER O NOME COMPLETO DO SEGUNDO INTEGRANTE**
+- Thaina de Sá
 
 ## O sistema
 Cadastro, listagem, busca, edição e exclusão de produtos. Cada produto tem nome, categoria, preço e quantidade. O painel mostra número de produtos, unidades e valor total do estoque. A exclusão pede confirmação e os campos são validados no navegador e no servidor.
