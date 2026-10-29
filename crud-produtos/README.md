@@ -3,7 +3,7 @@
 ## Integrantes
 
 - Carlos Gabriel Alves Nascimento
-- [Nome completo do segundo integrante]
+- Thaina de Sá
 
 ## Sobre o projeto
 
