@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verificar Docker
+        run: |
+          docker --version
+          docker compose version
+
+      - name: Validar configuracao
+        run: docker compose config -q
+
+      - name: Deploy da aplicacao
+        run: |
+          echo "Iniciando o deploy..."
+          docker compose up -d --build --remove-orphans
+          echo "Deploy executado!"
+
+      - name: Conferir containers
+        run: docker compose ps
